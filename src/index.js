@@ -40,18 +40,19 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 //Construction of Links
-  const navs = document.querySelectorAll('nav a')
-
-  for(let i = 0; i < navs.length; i++) {
-    navs[i].style.fontStyle = 'italic'
-  }
 
   const link1 = document.querySelector('nav a:nth-of-type(1)')
+  link1.classList.add('italic')
   const link2 = document.querySelector('nav a:nth-of-type(2)')
+  link2.classList.add('italic')
   const link3 = document.querySelector('nav a:nth-of-type(3)')
+  link3.classList.add('italic')
   const link4 = document.querySelector('nav a:nth-of-type(4)')
+  link4.classList.add('italic')
   const link5 = document.querySelector('nav a:nth-of-type(5)')
+  link5.classList.add('italic')
   const link6 = document.querySelector('nav a:nth-of-type(6)')
+  link6.classList.add('italic')
 
   link1.textContent = siteContent['nav']['nav-item-1']
   link2.textContent = siteContent['nav']['nav-item-2']
@@ -118,6 +119,6 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 //Implementing Footer
   const copyright = document.querySelector('footer a')
   copyright.textContent = siteContent['footer']['copyright']
-  copyright.style.fontWeight = 'bold'
+  copyright.classList.add('bold')
 
 console.log('project wired!')
