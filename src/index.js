@@ -39,4 +39,85 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
+//Construction of Links
+  const navs = document.querySelectorAll('nav a')
+
+  for(let i = 0; i < navs.length; i++) {
+    navs[i].style.fontStyle = 'italic'
+  }
+
+  const link1 = document.querySelector('nav a:nth-of-type(1)')
+  const link2 = document.querySelector('nav a:nth-of-type(2)')
+  const link3 = document.querySelector('nav a:nth-of-type(3)')
+  const link4 = document.querySelector('nav a:nth-of-type(4)')
+  const link5 = document.querySelector('nav a:nth-of-type(5)')
+  const link6 = document.querySelector('nav a:nth-of-type(6)')
+
+  link1.textContent = siteContent['nav']['nav-item-1']
+  link2.textContent = siteContent['nav']['nav-item-2']
+  link3.textContent = siteContent['nav']['nav-item-3']
+  link4.textContent = siteContent['nav']['nav-item-4']
+  link5.textContent = siteContent['nav']['nav-item-5']
+  link6.textContent = siteContent['nav']['nav-item-6']
+
+//Implementing 'DOM Is Awesome' Line
+  const h1 = document.querySelector('h1')
+  const button1 = document.querySelector('.cta-text button')
+  h1.textContent = siteContent['cta']['h1']
+  button1.textContent = siteContent['cta']['button']
+
+//Fetch 'Great Idea' Company Logo
+  const logo = document.querySelector('.logo')
+  logo.src = 'http://localhost:9000/img/logo.png'
+
+//Implementing Top Image of Page
+  const snipet = document.querySelector('#cta-img')
+  snipet.src = 'http://localhost:9000/img/cta.png'
+
+//Implementing Top Body of Page
+  const features = document.querySelector('.top-content h4:nth-of-type(1)')
+  const featuresContent = document.querySelector('.top-content p:nth-of-type(1)')
+  const about = document.querySelector('.top-content .text-content:nth-of-type(2) h4')
+  const aboutContent = document.querySelector('.top-content .text-content:nth-of-type(2) p')
+
+  features.textContent = siteContent['main-content']['features-h4']
+  featuresContent.textContent = siteContent['main-content']['features-content']
+  about.textContent = siteContent['main-content']['about-h4']
+  aboutContent.textContent = siteContent['main-content']['about-content']
+
+//Implementing Bottom Image of Page
+  const snipet2 = document.querySelector('#middle-img')
+  snipet2.src = 'http://localhost:9000/img/accent.png'
+
+//Implementing Bottom Body of Page
+  const services = document.querySelector('.bottom-content h4:nth-of-type(1)')
+  const servicesContent = document.querySelector('.bottom-content p:nth-of-type(1)')
+  const product = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4')
+  const productContent = document.querySelector('.bottom-content .text-content:nth-of-type(2) p')
+  const vision = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4')
+  const visionContent = document.querySelector('.bottom-content .text-content:nth-of-type(3) p')
+
+  services.textContent = siteContent['main-content']['services-h4']
+  servicesContent.textContent = siteContent['main-content']['services-content']
+  product.textContent = siteContent['main-content']['product-h4']
+  productContent.textContent = siteContent['main-content']['product-content']
+  vision.textContent = siteContent['main-content']['vision-h4']
+  visionContent.textContent = siteContent['main-content']['vision-content']
+
+//Implementing Contact Info
+  const contact = document.querySelector('.contact h4')
+  const address = document.querySelector('.contact p:nth-of-type(1)')
+  const phone = document.querySelector('.contact p:nth-of-type(2)')
+  const email = document.querySelector('.contact p:nth-of-type(3)')
+
+  contact.textContent = siteContent['contact']['contact-h4']
+  address.textContent = siteContent['contact']['address']
+  phone.textContent = siteContent['contact']['phone']
+  email.textContent = siteContent['contact']['email']
+
+//Implementing Footer
+  const copyright = document.querySelector('footer a')
+  copyright.textContent = siteContent['footer']['copyright']
+  copyright.style.fontWeight = 'bold'
+
 console.log('project wired!')
